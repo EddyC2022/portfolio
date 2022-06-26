@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.menuList {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 20rem;
+    background-color: #525e65;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline-block;
+    margin: 0 2.4rem 0 2.4rem
+}
+
+li a {
+    display:block;
+    color: #000;
+    padding: 14px 14px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+li a:hover {
+    background-color: #111;
+}
+
+aside ul li a:hover {
+    background-color: #525e65;
+}
+
+aside ul li a {
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.title {
+    position: relative;
+    padding: 2em 0;
+    text-align: center;
+    margin: 125px 0 0 0;
+    font-size: 4rem;
+    letter-spacing: 1.1rem;
+}
+
+body {
+    background-color: #222733;
+    color:white; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10rem;
+    letter-spacing: .2rem;
+}
+
+h2,
+h3,
+h4 {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 0 7rem 0;
+    letter-spacing: .4rem;
+}
+
+h3 section {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+aside {
+    position: fixed;
+    left: .2rem;
+    right: auto;
+    bottom: 6.6rem;
+}
+
+aside li {
+    margin-top: 2rem;
+    display: block;
+}
+
+section {
+    margin: 0 auto;
+    margin-bottom: 6.6rem;
+    text-align: justify;
+    padding: 0 6.6rem;
+    font-size: 1.2rem;
+}
+
+button {
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    color: #525e65;
+    margin: 0 0 5rem 0;
+}
+
+div.box {
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+div img {
+    border-radius: 90%;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+form label {
+    margin-bottom: 2rem;
+}
+
+.menuList {
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width:700px) {
+
+    .navmenu {
+        width: 100%;
+        background:#525e65;
+        top: 75px;
+        right: 0px;
+        z-index: 2;
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .menuList {
+        display: block;
+    }
+
+    .shown {
+        display:block;
+    }
+}
+
+@media only screen and (min-width:700px){
+    section {
+        width:60rem;
+    }
+}
